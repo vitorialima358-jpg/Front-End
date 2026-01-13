@@ -1,0 +1,30 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Garantir altura total da tela */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Remove estilos padrão do Vite */
+body {
+  background-color: #312e81; /* roxo do Blog Pessoal */
+}
+
+/* Links (se precisar depois) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botões (base neutra) */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

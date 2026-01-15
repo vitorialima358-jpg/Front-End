@@ -1,7 +1,15 @@
-import Home from '../src/pages/home/home'
+import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
+import Home from './pages/home/home'
 
 function App() {
-  return <Home />
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

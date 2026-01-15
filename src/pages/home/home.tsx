@@ -1,54 +1,36 @@
-import homeImage from '../../assets/home.png';
-
 function Home() {
   return (
-    <div
-      style={{
-        width: '100%',
-        height: '100vh',
-        backgroundImage: `url(${homeImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        paddingLeft: '8%',
-      }}
-    >
-      <div
-        style={{
-          color: 'white',
-          textAlign: 'left',
-          maxWidth: '600px',
-          padding: '2rem',
-          background: 'rgba(49, 46, 129, 0.7)',
-          borderRadius: '12px',
-        }}
-      >
-        <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>
-          Seja Bem Vinde!
-        </h2>
+    <>
+      <div className="bg-indigo-900 flex justify-center">
+        <div className="container grid grid-cols-2 text-white">
+          <div className="flex flex-col gap-4 items-center justify-center py-4">
+            <h2 className="text-5xl font-bold">
+              Seja Bem Vinde!
+            </h2>
+            <p className="text-xl">
+              Expresse aqui seus pensamentos e opiniões
+            </p>
 
-        <p style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>
-          Expresse aqui seus pensamentos e opiniões
-        </p>
+            <div className="flex justify-around gap-4">
+              <div
+                className="rounded text-white border-white border-solid border-2 py-2 px-4"
+              >
+                Nova Postagem
+              </div>
+            </div>
+          </div>
 
-        <button
-          style={{
-            padding: '0.75rem 1.5rem',
-            borderRadius: '8px',
-            border: '2px solid white',
-            background: 'transparent',
-            color: 'white',
-            fontSize: '1rem',
-          }}
-        >
-          Nova Postagem
-        </button>
+          <div className="flex justify-center ">
+            <img
+              src="https://i.imgur.com/fyfri1v.png"
+              alt="Imagem Página Home"
+              className="w-2/3"
+            />
+          </div>
+        </div>
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
-export default Home;
+export default Home
